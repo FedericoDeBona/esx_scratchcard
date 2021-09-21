@@ -12,7 +12,7 @@ A resource for Fivem servers that implements scratch cards.
 <img src="https://i.postimg.cc/k5ryNNbL/i4.png" height="325" width="325">
 
 * Breaking news banner
-<img src="https://i.postimg.cc/m2DVTg4p/i1.png" height="540" width="960">
+<img src="https://i.postimg.cc/m2DVTg4p/i1.png" height="360" width="640">
 
 ## Options in config
 * Prize multiplier
