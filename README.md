@@ -2,7 +2,8 @@
 A resource for Fivem servers that implements scratch cards.
 
 # Install
-Just run the sql file in your database and you are ready to go. If you want to customize it, play with the config file
+Run the sql file in your database and you are ready to go. It's a usable item so you can place it in your shops or wherever you want.
+If you want to customize it, check the config file.
 
 # Screenshoot
 * Scratch card
