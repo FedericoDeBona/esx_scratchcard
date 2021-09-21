@@ -191,7 +191,7 @@ window.addEventListener("message", function (event) {
 						document.getElementsByClassName("prize-dollars")[0].innerHTML = "$ " + totalPrize.toLocaleString()
 					}
 					$(".btn-close").unbind('click').bind("click", function(e) {	
-						$.post("http://scratchandwin/NUIFocusOff", JSON.stringify({totalPrize}));
+						$.post("http://esx_scratchcard/NUIFocusOff", JSON.stringify({totalPrize}));
 						location.reload();
 						return false;
 					});
