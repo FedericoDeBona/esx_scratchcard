@@ -1,0 +1,216 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+* {
+	font-family: "Inter", sans-serif;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.container {
+	display: block;
+
+	margin: 50px auto;
+	width: 600px;
+	height: 720px;
+	
+	background-image: url("img/background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px black;
+}
+
+.title {
+	margin: auto;
+	width: 80%;
+	height: 50px;
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	text-shadow: 2px 0 green, -2px 0 green, 0 2px green, 0 -2px green, 1px 1px green, -1px -1px green, 1px -1px green, -1px 1px green;
+	border-radius: 10px;
+	padding-top: 0px;
+}
+
+.box-title {
+	margin: 7px auto;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	text-shadow: 2px 0 green, -2px 0 green, 0 2px green, 0 -2px green, 1px 1px green, -1px -1px green, 1px -1px green, -1px 1px green;
+}
+
+.winning-numbers {
+	margin: 0 auto 2px auto;
+	width: 90%;
+	height: 80px;
+	background-color: white;
+	border: 8px solid #FED058;
+	border-radius: 10px;
+	box-shadow: inset 0px 0px 5px rgba(0,0,0,0.7);
+}
+
+#winning-numbers-image {
+	position: absolute;
+	z-index: 10;
+	width: 540px;
+	height: 80px;
+}
+
+.winning-numbers-container {
+	display: grid;
+	grid-template-columns: 80px 80px 80px 80px 80px ;
+	padding-left: 40px;
+	grid-gap: 25px 25px;
+}
+
+.winning-number {
+	padding-top: 28px;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	font-size: 20px;
+}
+
+
+/* MY NUMBERS*/
+.my-numbers {
+	margin: auto auto 2px auto;
+	width: 90%;
+	height: 400px;
+	background-color: white;
+	border: 8px solid #FED058;
+	border-radius: 10px;
+	box-shadow: inset 0px 0px 5px rgba(0,0,0,0.7);	
+}
+
+#my-numbers-image {
+	position: absolute;
+	z-index: 10;
+	width: 540px;
+	height: 400px;
+}
+
+.my-numbers-container {
+	display: grid;
+	grid-template-columns: 80px 80px 80px 80px 80px ;
+	padding-left: 40px;
+	grid-gap: 100px 25px;
+}
+
+.my-number {
+	padding-top: 25px;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	font-size: 30px;
+}
+
+.info-box {
+	margin: 0 auto 0 auto;
+	padding-top: 10px;
+	width: 90%;
+	height: 50px;
+	background-color: white;
+	border: 4px solid #FED058;
+	border-radius: 10px;
+	box-shadow: inset 0px 0px 5px rgba(0,0,0,0.7);
+	text-align: center;
+	color: black;
+}
+
+/* WIN SCREEN LOSE*/
+.win-screen-lose {
+	display: none;
+	margin: 50px auto;
+	width: 600px;
+	height: 600px;
+	background: linear-gradient(90deg, rgba(83,0,0,1) 0%, rgba(171,12,12,1) 68%, rgba(201,87,0,1) 100%);
+
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px black;
+}
+
+.prize-title {
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	padding-top: 140px;
+}
+
+.prize-title-2 {
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+
+/* WIN SCREEN WIN*/
+.win-screen-win {
+	display: none;
+	margin: 50px auto;
+	width: 600px;
+	height: 600px;
+	background: radial-gradient(circle, rgba(149,251,63,1) 0%, rgba(70,226,252,1) 100%);
+
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px black;
+}
+
+.prize-title {
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	padding-top: 140px;
+}
+
+.prize-title-2 {
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+
+.btn-close {
+	width: 150px;
+	font-size: 25px;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+	margin-top: 70px;
+	color: white;
+	background-color: transparent; /*#ab0c0c*/
+	border-radius: 8px;
+	border: 2px solid white;
+}
+
+.btn-close:hover {
+	background-color: rgba(0.0, 0.0, 0.0, 0.25);
+}
+.btn-close:active {
+	background-color: rgba(0.0, 0.0, 0.0, 0.50);
+}
+
+.btn-next {
+	display: none;
+	width: 150px;
+	font-size: 25px;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+	margin-top: 10px;
+	color: white;
+	background-color: rgb(0.0, 0.0, 0.0, 0.25); /*#ab0c0c*/
+	border-radius: 8px;
+	border: 2px solid white;
+}
+
+.btn-next:hover {
+	background-color: rgba(0.0, 0.0, 0.0, 0.50);
+}
+.btn-next:active {
+	background-color: rgba(0.0, 0.0, 0.0, 0.65);
+}
