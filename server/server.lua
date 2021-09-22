@@ -37,6 +37,10 @@ AddEventHandler("esx_scratchcard:setData", function(data1, data2)
 	session[_source].prize = prize
 end)
 
+AddEventHandler('playerDropped', function()
+	session[source] = nil
+end)
+
 ESX.RegisterUsableItem('scratchcard', function(playerId)
 	local xPlayer = ESX.GetPlayerFromId(playerId)
 	xPlayer.removeInventoryItem('scratchcard', 1)
