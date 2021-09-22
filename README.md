@@ -1,6 +1,10 @@
 # esx_scratchcard
 A resource for Fivem servers that implements scratch cards.
 
+# Install
+Run the sql file in your database and you are ready to go. It's a usable item so you can place it in your shops or wherever you want.
+If you want to customize it, check the config file.
+
 # Screenshoot
 * Scratch card
 <img src="https://i.postimg.cc/15jBX15m/i2.png" height="377" width="319">

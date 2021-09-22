@@ -27,18 +27,18 @@ RegisterNUICallback(
 		local prize = tonumber(data.totalPrize)
 		close()
 		if(prize ~= 0) then
-			TriggerServerEvent("scratchandwin:getPrize", prize)
+			TriggerServerEvent("esx_scratchcard:getPrize", prize)
 		end
 	end
 )
 
-RegisterNetEvent("scratchandwin:news")
-AddEventHandler("scratchandwin:news", function(playerName, prize)
+RegisterNetEvent("esx_scratchcard:news")
+AddEventHandler("esx_scratchcard:news", function(playerName, prize)
 	ESX.Scaleform.ShowBreakingNews(_U('news_title'), playerName .. _U('news_middle') .. ESX.Math.GroupDigits(prize) .. "$".. _U('news_end'),  "", Config.bannerTimer)
 end)
 
-RegisterNetEvent("scratchandwin:open")
-AddEventHandler("scratchandwin:open", function()
+RegisterNetEvent("esx_scratchcard:open")
+AddEventHandler("esx_scratchcard:open", function()
 	if Config.usingEsxInventoryHud then
 		TriggerEvent("esx_inventoryhud:closeHud")
 	end
