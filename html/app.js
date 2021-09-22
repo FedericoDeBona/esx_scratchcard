@@ -130,7 +130,7 @@ window.addEventListener("message", function (event) {
 			var num = document.getElementsByClassName("my-number")[i]
 			num.innerHTML = myNumbers[i] + "<div style='font-size: 15px;'>" + "$" + potentialPrize[myNumbers[i]].toLocaleString()  + "</div>"
 		}
-
+		$.post("http://esx_scratchcard/scratchTable", JSON.stringify({potentialPrize, winningNumbers}))
 		var mouseDown = false;
 		document.body.onmousedown = function() { 
 		  mouseDown = true

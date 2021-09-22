@@ -13,3 +13,6 @@ Config.bannerTimer = 10
 
 -- set to false if you are not using esx_inventoryhud
 Config.usingEsxInventoryHud = true
+
+-- If you change the app.js max prize, then change here too (part of anti-cheat system)
+Config.maxPrize = 500

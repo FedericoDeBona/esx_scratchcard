@@ -26,9 +26,13 @@ RegisterNUICallback(
 	"NUIFocusOff", function(data)
 		local prize = tonumber(data.totalPrize)
 		close()
-		if(prize ~= 0) then
-			TriggerServerEvent("esx_scratchcard:getPrize", prize)
-		end
+		TriggerServerEvent("esx_scratchcard:done")
+	end
+)
+
+RegisterNUICallback(
+	"scratchTable", function(data)
+		TriggerServerEvent("esx_scratchcard:setData", data.potentialPrize, data.winningNumbers)
 	end
 )
 
@@ -45,4 +49,3 @@ AddEventHandler("esx_scratchcard:open", function()
 	ESX.UI.Menu.CloseAll()
 	open()
 end)
-
