@@ -44,6 +44,6 @@ end)
 ESX.RegisterUsableItem('scratchcard', function(playerId)
 	local xPlayer = ESX.GetPlayerFromId(playerId)
 	xPlayer.removeInventoryItem('scratchcard', 1)
-	xPlayer.triggerEvent("esx_scratchcard:open")
+	TriggerClientEvent("esx_scratchcard:open", playerId)
 	session[playerId] = { prize = nil}
 end)
